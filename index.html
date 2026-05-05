@@ -1,221 +1,104 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-CO">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plan de Salud | Cobertura médica clara y flexible</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Plan de Salud | Cotiza planes de medicina prepagada</title>
     <meta
       name="description"
-      content="Compará coberturas médicas, elegí el plan ideal y recibí asesoramiento personalizado para vos y tu familia."
+      content="Encuentra el plan de salud ideal para ti. Cotiza medicina prepagada con compañías aliadas y asesoría personalizada."
     />
-    <meta property="og:title" content="Plan de Salud | Cobertura médica clara y flexible" />
+    <link rel="canonical" href="https://miplandesalud.co/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mi Plan de Salud" />
     <meta
       property="og:description"
-      content="Conocé beneficios, planes y coberturas en una sola página. Solicitá contacto en minutos."
+      content="Cotiza ahora y obtén los mejores precios en planes de medicina prepagada."
     />
-    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta property="og:url" content="https://miplandesalud.co/" />
+    <meta property="og:image" content="assets/img/hero-bg.svg" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
-
-    <header class="site-header">
-      <div class="container header-content">
-        <a href="#hero" class="logo" aria-label="Inicio Plan de Salud">Plan de Salud</a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-nav"
-          aria-label="Abrir menú"
-        >
-          Menú
-        </button>
-
-        <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal">
+    <header class="topbar" id="inicio">
+      <div class="wrap nav">
+        <a class="brand" href="#inicio" aria-label="Inicio Mi Plan de Salud">Miplan <small>De salud</small></a>
+        <nav aria-label="Principal">
           <ul>
-            <li><a href="#beneficios">Beneficios</a></li>
-            <li><a href="#planes">Planes</a></li>
-            <li><a href="#proceso">Cómo funciona</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#planes">PLANES</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
           </ul>
         </nav>
-
-        <a href="#contacto" class="btn btn-primary">Recibir propuesta</a>
+        <a class="cta btn-plan" href="#planes">PLANES</a>
+        <a class="cta btn-phone" href="tel:+573188907425">+57 3188907425</a>
       </div>
     </header>
 
-    <main id="main-content">
-      <section id="hero" class="hero" aria-labelledby="hero-title">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <p class="eyebrow">Cobertura médica para personas, familias y pymes</p>
-            <h1 id="hero-title">Elegí un plan de salud claro, flexible y a tu medida</h1>
-            <p class="subtitle">
-              Compará cobertura, cartilla y beneficios en una sola llamada para tomar una decisión
-              con confianza.
-            </p>
-            <div class="hero-actions">
-              <a href="#contacto" class="btn btn-primary">Cotizar mi plan</a>
-              <a href="#planes" class="btn btn-secondary">Ver coberturas</a>
-            </div>
-          </div>
-          <aside class="hero-trust" aria-label="Indicadores de confianza">
-            <p class="trust-title">Más de 18.000 familias asesoradas</p>
-            <ul>
-              <li>Respuesta inicial en menos de 30 minutos hábiles.</li>
-              <li>Equipo matriculado en coberturas y prestaciones.</li>
-              <li>Comparativa transparente entre planes y costos.</li>
-            </ul>
-          </aside>
-        </div>
-      </section>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          src="assets/img/hero-bg.svg"
+          alt="Familia recibiendo asesoría de salud"
+          width="1600"
+          height="900"
+          class="hero-bg"
+        />
+        <div class="overlay"></div>
 
-      <section id="beneficios" class="section" aria-labelledby="beneficios-title">
-        <div class="container">
-          <p class="section-kicker">Bloques de valor</p>
-          <h2 id="beneficios-title">Todo lo que necesitás para decidir mejor</h2>
-          <p class="section-subtitle">Beneficios pensados para darte previsibilidad en salud.</p>
-          <div class="cards-grid value-grid">
-            <article class="card">
-              <h3>Orientación experta</h3>
-              <p>Te explicamos coberturas, topes y letra chica con ejemplos concretos.</p>
-            </article>
-            <article class="card">
-              <h3>Red médica amplia</h3>
-              <p>Acceso a clínicas, centros de diagnóstico y especialistas en todo el país.</p>
-            </article>
-            <article class="card">
-              <h3>Beneficios cotidianos</h3>
-              <p>Descuentos en farmacia y programas preventivos para cada etapa de vida.</p>
-            </article>
-            <article class="card">
-              <h3>Gestión simple</h3>
-              <p>Alta digital, seguimiento por WhatsApp y acompañamiento post venta.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="planes" class="section section-alt" aria-labelledby="planes-title">
-        <div class="container">
-          <p class="section-kicker">Planes y cobertura</p>
-          <h2 id="planes-title">Compará opciones según tu presupuesto</h2>
-          <div class="cards-grid plans-grid">
-            <article class="card plan-card">
-              <h3>Plan Base</h3>
-              <p class="plan-price">Desde $39.900/mes</p>
-              <ul>
-                <li>Consultas clínicas y urgencias</li>
-                <li>Telemedicina 24/7</li>
-                <li>Descuentos en medicamentos</li>
-              </ul>
-              <a href="#contacto" class="btn btn-secondary">Quiero este plan</a>
-            </article>
-            <article class="card plan-card featured">
-              <p class="badge">Recomendado</p>
-              <h3>Plan Plus</h3>
-              <p class="plan-price">Desde $54.900/mes</p>
-              <ul>
-                <li>Cartilla ampliada</li>
-                <li>Reintegros en especialidades</li>
-                <li>Chequeos preventivos anuales</li>
-              </ul>
-              <a href="#contacto" class="btn btn-primary">Solicitar propuesta</a>
-            </article>
-            <article class="card plan-card">
-              <h3>Plan Total</h3>
-              <p class="plan-price">Desde $79.900/mes</p>
-              <ul>
-                <li>Cobertura superior y habitación individual</li>
-                <li>Atención preferencial</li>
-                <li>Mayor alcance en prestaciones</li>
-              </ul>
-              <a href="#contacto" class="btn btn-secondary">Hablar con asesor</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="proceso" class="section" aria-labelledby="proceso-title">
-        <div class="container">
-          <p class="section-kicker">Cómo funciona</p>
-          <h2 id="proceso-title">3 pasos para activar tu cobertura</h2>
-          <div class="cards-grid process-grid">
-            <article class="card">
-              <h3>1. Contanos tu perfil</h3>
-              <p>Edad, zona y tipo de cobertura que necesitás para cotizar con precisión.</p>
-            </article>
-            <article class="card">
-              <h3>2. Recibí comparativa</h3>
-              <p>Te mostramos alternativas con diferencias claras de precio y beneficios.</p>
-            </article>
-            <article class="card">
-              <h3>3. Elegí y activá</h3>
-              <p>Gestionamos el alta y te acompañamos hasta confirmar tu credencial.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="contacto" class="section" aria-labelledby="contacto-title">
-        <div class="container contact-layout">
-          <div>
-            <p class="section-kicker">Formulario</p>
-            <h2 id="contacto-title">Recibí asesoramiento personalizado</h2>
-            <p class="section-subtitle">
-              Completá tus datos y te contactamos para presentarte opciones acordes a tu objetivo.
-            </p>
-            <div class="trust-blocks" aria-label="Sellos de confianza">
-              <article class="trust-item">
-                <h3>Atención humana</h3>
-                <p>Sin bots: te responde un asesor especializado.</p>
-              </article>
-              <article class="trust-item">
-                <h3>Datos protegidos</h3>
-                <p>Tus datos se usan únicamente para cotización y contacto.</p>
-              </article>
-              <article class="trust-item testimonial-mini">
-                <p>“Nos ayudaron a resolver todo en una tarde.”</p>
-                <span>Laura y Martín, grupo familiar</span>
-              </article>
-            </div>
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">Encuentra aquí <span>El Plan de Salud</span> Ideal para ti.</h1>
+            <p class="years"><strong>Más de 13 años</strong> cuidando la salud de nuestros clientes.</p>
+            <p class="linea">Medicina Prepagada Colmédica</p>
+            <a class="btn-yellow" href="#planes">VER TODOS LOS PLANES</a>
           </div>
 
-          <form class="contact-form" novalidate>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" autocomplete="name" required />
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
-
-            <label for="telefono">Teléfono</label>
-            <input id="telefono" name="telefono" type="tel" autocomplete="tel" />
-
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-
-            <button type="submit" class="btn btn-primary">Quiero mi propuesta</button>
-            <p class="form-legal">Al enviar, aceptás ser contactado/a por nuestro equipo comercial.</p>
-            <p class="form-message" aria-live="polite"></p>
+          <form id="contacto" class="lead" novalidate>
+            <h2>Cotiza ahora y obtén los <strong>mejores precios.</strong></h2>
+            <label class="sr-only" for="nombre">Nombres y apellidos</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Nombres y Apellidos" required />
+            <label class="sr-only" for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" placeholder="Email *" required />
+            <label class="sr-only" for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" placeholder="Teléfono" required />
+            <label class="check"
+              ><input type="checkbox" required /> He leído y acepto la
+              <a href="#">política de privacidad</a></label
+            >
+            <button type="submit">ENVIAR</button>
+            <p class="form-msg" aria-live="polite"></p>
           </form>
         </div>
       </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="container footer-content">
-        <p>© 2026 Plan de Salud. Todos los derechos reservados.</p>
-        <nav aria-label="Enlaces legales">
-          <ul>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Defensa del consumidor</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
+      <section id="aliadas" class="alliances" aria-labelledby="aliadas-title">
+        <div class="wrap allies">
+          <h2 id="aliadas-title">Compañías aliadas:</h2>
+          <img src="assets/img/colmedica.svg" alt="Logo Colmédica" width="240" height="70" loading="lazy" />
+          <img src="assets/img/sura.svg" alt="Logo Sura" width="210" height="70" loading="lazy" />
+          <img src="assets/img/axa.svg" alt="Logo AXA" width="90" height="90" loading="lazy" />
+          <img src="assets/img/allianz.svg" alt="Logo Allianz" width="210" height="70" loading="lazy" />
+          <img src="assets/img/bolivar.svg" alt="Logo Seguros Bolívar" width="220" height="70" loading="lazy" />
+        </div>
+      </section>
+
+      <section id="planes" class="section" aria-labelledby="planes-title">
+        <div class="wrap">
+          <h2 id="planes-title">Planes de Medicina Prepagada</h2>
+          <div class="cards">
+            <article><h3>Colmédica</h3><p>Planes individuales y familiares con red nacional.</p></article>
+            <article><h3>Sura</h3><p>Opciones con cobertura ambulatoria y hospitalaria.</p></article>
+            <article><h3>Allianz</h3><p>Planes con enfoque en respaldo y atención preferencial.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="section alt" aria-labelledby="blog-title">
+        <div class="wrap"><h2 id="blog-title">Blog</h2><p>Consejos y novedades sobre salud y medicina prepagada.</p></div>
+      </section>
+    </main>
 
     <script src="scripts/main.js" defer></script>
   </body>
